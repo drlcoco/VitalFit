@@ -1,0 +1,111 @@
+.navbar {
+  width: 100%;
+  background: rgba(10, 18, 30, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
+}
+
+.navbar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #f8fafc;
+  font-weight: 800;
+  font-size: 1.45rem;
+  letter-spacing: 0.04em;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 0.7rem;
+  background: linear-gradient(135deg, #22c55e, #14b8a6);
+  color: #062b24;
+  font-weight: 900;
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.45);
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 0.96rem;
+  font-weight: 600;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffffff;
+  background: rgba(148, 163, 184, 0.12);
+}
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #22c55e, #10b981);
+  color: #041b16;
+  font-weight: 800;
+  box-shadow: 0 10px 20px rgba(16, 185, 129, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(16, 185, 129, 0.35);
+}
+
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-brand {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .nav-link {
+    padding: 0.55rem 0.7rem;
+    font-size: 0.88rem;
+  }
+
+  .nav-cta {
+    width: 100%;
+  }
+}
