@@ -1,0 +1,137 @@
+.home-page {
+  width: 100%;
+  min-height: calc(100vh - 72px);
+  background: #0f172a;
+}
+
+.hero-visual {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 72px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/image/imagen-portada.webp');
+  background-size: cover;
+  background-position: center 25%;
+}
+
+.hero-visual::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 900px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.35rem;
+  text-transform: uppercase;
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.hero-overlay h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+  max-width: 900px;
+}
+
+.hero-subtitle {
+  margin: 1rem 0 0;
+  max-width: 700px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.cta-button {
+  padding: 0.9rem 1.6rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+}
+
+.cta-button.primary {
+  background: #38BDF8;
+  color: #0f172a;
+  box-shadow: 0 10px 24px rgba(56, 189, 248, 0.35);
+}
+
+.cta-button.secondary {
+  background: #ef4444;
+  color: #fff;
+  border: 1px solid rgba(239, 68, 68, 0.7);
+  box-shadow: 0 10px 24px rgba(239, 68, 68, 0.25);
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    min-height: auto;
+  }
+
+  .hero-visual {
+    height: 60vh;
+  }
+
+  .hero-overlay {
+    padding: 1.5rem;
+  }
+
+  .eyebrow {
+    letter-spacing: 0.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-button {
+    width: min(100%, 260px);
+  }
+}

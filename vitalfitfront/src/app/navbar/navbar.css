@@ -17,12 +17,15 @@
 }
 
 .logo-vitalfit {
-  color: #5bc0eb;
   font-size: 1.6rem;
+  background: linear-gradient(90deg, #ef4444 0%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .logo-vitalfit:hover {
-  color: #7dd3fc;
+  filter: brightness(1.1);
 }
 
 .navbar-nav {
@@ -43,7 +46,7 @@
 .navbar-nav .nav-link:hover,
 .navbar-nav .inicio-link {
   color: #ffffff;
-  background: rgba(91, 192, 235, 0.12);
+  background: rgba(34, 211, 238, 0.12);
 }
 
 .join-now-btn {
