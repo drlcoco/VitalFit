@@ -4,6 +4,11 @@ import { Training } from './training/training';
 import { Nutrition } from './nutrition/nutrition';
 import { Contact } from './contact/contact';
 import { StaticPage } from './static-page/static-page';
+import { About } from './about/about';
+import { Services } from './services/services';
+import { Pricing } from './pricing/pricing';
+import { Gallery } from './gallery/gallery';
+import { Blog } from './blog/blog';
 
 export const routes: Routes = [
   {
@@ -21,18 +26,15 @@ export const routes: Routes = [
   },
   {
     path: 'about',
-    component: StaticPage,
-    data: { title: 'About' }
+    component: About
   },
   {
     path: 'services',
-    component: StaticPage,
-    data: { title: 'Services' }
+    component: Services
   },
   {
     path: 'pricing',
-    component: StaticPage,
-    data: { title: 'Pricing' }
+    component: Pricing
   },
   {
     path: 'nutrition',
@@ -40,13 +42,11 @@ export const routes: Routes = [
   },
   {
     path: 'gallery',
-    component: StaticPage,
-    data: { title: 'Gallery' }
+    component: Gallery
   },
   {
     path: 'blog',
-    component: StaticPage,
-    data: { title: 'Blog' }
+    component: Blog
   },
   {
     path: 'contact',

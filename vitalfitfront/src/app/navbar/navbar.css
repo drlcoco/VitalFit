@@ -17,15 +17,26 @@
 }
 
 .logo-vitalfit {
-  font-size: 1.6rem;
-  background: linear-gradient(90deg, #ef4444 0%, #22d3ee 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  position: relative;
+  display: block;
+  flex: 0 0 190px;
+  width: 190px;
+  height: 52px;
+  margin: 0;
+  overflow: hidden;
 }
 
 .logo-vitalfit:hover {
   filter: brightness(1.1);
+}
+
+.logo-vitalfit-img {
+  position: absolute;
+  top: -38px;
+  left: -60px;
+  width: 310px;
+  max-width: none;
+  height: auto;
 }
 
 .navbar-nav {

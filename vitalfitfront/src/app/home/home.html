@@ -1,19 +1,236 @@
 <section class="home-page">
+
+  <!-- HERO: PORTADA ACTUAL -->
   <div class="hero-visual">
     <div class="hero-overlay">
       <div class="hero-content">
         <p class="eyebrow">VITALFIT</p>
+
         <h1>Transform your body,<br />Transform your life</h1>
+
         <p class="hero-subtitle">
           Join the most elite fitness community with state-of-the-art equipment,
           expert trainers, and results-driven programs.
         </p>
 
-        <div class="hero-actions">
-          <button class="cta-button primary">Join Now</button>
-          <button class="cta-button secondary">Get free trial</button>
+<div class="hero-actions">
+  <button class="cta-button primary" routerLink="/contact">
+    Join Now
+  </button>
+
+  <button class="cta-button secondary" routerLink="/contact">
+    Get free trial
+  </button>
+</div>
+
+        
         </div>
       </div>
     </div>
-  </div>
+  
+
+  <!-- SECCIÓN 1: ENTRENAMIENTOS -->
+  <section class="training-section" id="training">
+
+    <div class="section-heading">
+      <p class="section-eyebrow">DISCOVER YOUR POTENTIAL</p>
+      <h2>Find Your <span>Strength</span></h2>
+      <p>
+        Train your way with programs designed to help you reach your goals.
+      </p>
+    </div>
+
+    <div class="training-grid">
+
+      <article class="training-card">
+        <img
+          src="image/image1.jpg"
+          alt="Entrenamiento de fuerza"
+          loading="lazy"
+        />
+
+        <div class="training-card-content">
+          <span class="card-number">01</span>
+          <h3>Strength</h3>
+          <p>
+            Build muscle, develop strength and push your limits with
+            our strength training programs.
+          </p>
+          <a routerLink="/training">DISCOVER MORE <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="training-card">
+        <img
+          src="image/image2.jpg"
+          alt="Entrenamiento cardiovascular"
+          loading="lazy"
+        />
+
+        <div class="training-card-content">
+          <span class="card-number">02</span>
+          <h3>Cardio</h3>
+          <p>
+            Improve your endurance, boost your energy and challenge
+            yourself every day.
+          </p>
+          <a routerLink="/training">DISCOVER MORE <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="training-card">
+        <img
+          src="image/image3.jpg"
+          alt="Entrenamiento personal"
+          loading="lazy"
+        />
+
+        <div class="training-card-content">
+          <span class="card-number">03</span>
+          <h3>Personal Training</h3>
+          <p>
+            Get expert guidance and a training plan adapted to your
+            goals and fitness level.
+          </p>
+          <a routerLink="/training">DISCOVER MORE <span>→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2: PLANES -->
+  <section class="pricing-section" id="pricing">
+
+    <div class="section-heading">
+      <p class="section-eyebrow">INVEST IN YOURSELF</p>
+      <h2>Choose Your <span>Plan</span></h2>
+      <p>
+        Find the membership that fits your lifestyle and your goals.
+      </p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <article class="pricing-card">
+        <h3>START</h3>
+        <p class="plan-description">Your fitness journey starts here.</p>
+
+        <div class="plan-price">
+          <span class="currency">€</span>29.90
+          <span class="price-period">/month</span>
+        </div>
+
+        <ul>
+          <li>✓ Gym access</li>
+          <li>✓ Fitness equipment</li>
+          <li>✓ Changing rooms</li>
+          <li>✓ Basic training support</li>
+        </ul>
+
+        <a class="plan-button" routerLink="/pricing">CHOOSE PLAN</a>
+      </article>
+
+      <article class="pricing-card featured-plan">
+
+        <span class="popular-badge">MOST POPULAR</span>
+
+        <h3>VITAL</h3>
+        <p class="plan-description">Take your training to the next level.</p>
+
+        <div class="plan-price">
+          <span class="currency">€</span>39.90
+          <span class="price-period">/month</span>
+        </div>
+
+        <ul>
+          <li>✓ Everything in Start</li>
+          <li>✓ Group classes</li>
+          <li>✓ Personalized training plan</li>
+          <li>✓ Progress tracking</li>
+        </ul>
+
+        <a class="plan-button" routerLink="/pricing">CHOOSE PLAN</a>
+      </article>
+
+      <article class="pricing-card">
+        <h3>ELITE</h3>
+        <p class="plan-description">The ultimate fitness experience.</p>
+
+        <div class="plan-price">
+          <span class="currency">€</span>59.90
+          <span class="price-period">/month</span>
+        </div>
+
+        <ul>
+          <li>✓ Everything in Vital</li>
+          <li>✓ Personal training session</li>
+          <li>✓ Priority class booking</li>
+          <li>✓ Premium support</li>
+        </ul>
+
+        <a class="plan-button" routerLink="/pricing">CHOOSE PLAN</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3: ENTRENADORES -->
+  <section class="trainers-section" id="trainers">
+
+    <div class="trainers-image">
+      <img
+        src="image/image4.jpg"
+        alt="Entrenador de VitalFit"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="trainers-content">
+      <p class="section-eyebrow">YOUR SUCCESS, OUR MISSION</p>
+
+      <h2>Trainers Who <span>Push You Further</span></h2>
+
+      <p>
+        Behind every great achievement there is dedication, discipline
+        and the right support.
+      </p>
+
+      <p>
+        Our trainers are ready to guide you, challenge you and help
+        you become the strongest version of yourself.
+      </p>
+
+      <a class="trainers-button" routerLink="/about">
+        MEET OUR TEAM <span>→</span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- SECCIÓN 4: ESTADÍSTICAS -->
+  <section class="stats-section">
+
+    <div class="stat-item">
+      <span class="stat-number">1,200+</span>
+      <p>HAPPY MEMBERS</p>
+    </div>
+
+    <div class="stat-item">
+      <span class="stat-number">24/7</span>
+      <p>ACCESS</p>
+    </div>
+
+    <div class="stat-item">
+      <span class="stat-number">15+</span>
+      <p>EXPERT TRAINERS</p>
+    </div>
+
+    <div class="stat-item">
+      <span class="stat-number">100%</span>
+      <p>MOTIVATION</p>
+    </div>
+
+  </section>
+
 </section>
