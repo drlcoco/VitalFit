@@ -1,0 +1,240 @@
+
+/* SERVICES SECTION */
+.services {
+  width: 100%;
+  padding: 80px 6%;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+
+/* MAIN CONTAINER */
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.services-header {
+  max-width: 700px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.services-subtitle {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #e63946;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.services-header h1 {
+  margin-bottom: 20px;
+  color: #171717;
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.services-header p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* SERVICES GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+/* SERVICE CARD */
+.service-card {
+  padding: 35px 28px;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #e63946;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* SERVICE NUMBER */
+.service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 25px;
+  background-color: #fff0f1;
+  border-radius: 10px;
+}
+
+.service-icon span {
+  color: #e63946;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* CARD TEXT */
+.service-card h2 {
+  margin-bottom: 15px;
+  color: #171717;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.service-card p {
+  margin-bottom: 25px;
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* SERVICE LINKS */
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #e63946;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.service-link span {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.service-link:hover span {
+  transform: translateX(5px);
+}
+
+.service-link:focus-visible,
+.services-button:focus-visible {
+  outline: 3px solid #171717;
+  outline-offset: 4px;
+}
+
+/* CALL TO ACTION */
+.services-cta {
+  margin-top: 70px;
+  padding: 45px 25px;
+  background-color: #171717;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.services-cta h2 {
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.services-cta p {
+  margin-bottom: 25px;
+  color: #cccccc;
+  line-height: 1.7;
+}
+
+/* CTA BUTTON */
+.services-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background-color: #e63946;
+  border: 2px solid #e63946;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.services-button span {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.services-button:hover {
+  background-color: #bd2633;
+  border-color: #bd2633;
+  transform: translateY(-3px);
+}
+
+.services-button:hover span {
+  transform: translateX(5px);
+}
+
+/* TABLETS */
+@media (max-width: 992px) {
+  .services {
+    padding: 60px 5%;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .services-header h1 {
+    font-size: 38px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .services {
+    padding: 45px 20px;
+  }
+
+  .services-header {
+    margin-bottom: 35px;
+  }
+
+  .services-header h1 {
+    font-size: 32px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 28px 24px;
+  }
+
+  .services-cta {
+    margin-top: 45px;
+    padding: 35px 20px;
+  }
+
+  .services-cta h2 {
+    font-size: 25px;
+  }
+}
+
+/* TOUCH DEVICES */
+@media (hover: none) {
+  .service-card:hover,
+  .services-button:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+

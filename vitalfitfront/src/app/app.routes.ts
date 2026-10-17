@@ -9,6 +9,7 @@ import { Services } from './services/services';
 import { Pricing } from './pricing/pricing';
 import { Gallery } from './gallery/gallery';
 import { Blog } from './blog/blog';
+import { Progress } from './progress/progress';
 
 export const routes: Routes = [
   {
@@ -39,6 +40,10 @@ export const routes: Routes = [
   {
     path: 'nutrition',
     component: Nutrition
+  },
+  {
+    path: 'progress',
+    component: Progress
   },
   {
     path: 'gallery',
